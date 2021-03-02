@@ -1,0 +1,22 @@
+package oo.polimorfismo;
+//aqui se tratasse no polimorfismo dinamico
+public class Pessoa {
+    /**
+     * Peso em Kg
+     */
+    private double peso = 0;
+
+    public Pessoa(double pesoInicial) {
+        this.peso = pesoInicial;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void comer(Comida comida) {
+        this.peso += comida.getPeso();
+    }
+
+
+}
