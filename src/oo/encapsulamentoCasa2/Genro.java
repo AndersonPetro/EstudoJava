@@ -1,6 +1,5 @@
 package oo.encapsulamentoCasa2;
 
-import oo.encapsulamento2Casa1.Sogra;
 import oo.encapsulamento2Casa1.Sogro;
 
 public class Genro {

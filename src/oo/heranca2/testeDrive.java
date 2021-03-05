@@ -8,6 +8,6 @@ public class testeDrive {
 
         c = new Ferrari();
         c.acelerar();
-        System.out.println(c.getVelocidadeAtual() );
+        System.out.println(c.getVelocidadeAtual());
     }
 }

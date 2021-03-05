@@ -3,7 +3,7 @@ package oo.polimorfismo;
 public class Jantar {
     public static void main(String[] args) {
         Arroz arroz = new Arroz();
-        arroz.setPeso(0.250);
+        arroz.setPeso(0.280);
 
         Feijao feijao = new Feijao();
         feijao.setPeso(0.280);

@@ -2,7 +2,7 @@ package Teste3;
 
 public class ControleRemoto implements Controlador {
 
-
+        //Atributos
     private int  volume;
     private  boolean ligado;
     private boolean tocando;
@@ -11,7 +11,7 @@ public class ControleRemoto implements Controlador {
     public ControleRemoto(){
         this.volume = 50;
         this.ligado = true;
-        this.tocando = false;
+        this.tocando = true;
     }
 
 
@@ -38,7 +38,7 @@ public class ControleRemoto implements Controlador {
     private void setTocando(boolean tocando) {
         this.tocando = tocando;
     }
-
+    //sobreescrevendo Metodo
     @Override
     public void ligar() {
         this.setLigado(true);
@@ -72,7 +72,7 @@ public class ControleRemoto implements Controlador {
     @Override
     public void maisVolume() {
         if (this.getLigado()){
-            this.setVolume((this.getVolume()) + 112);
+            this.setVolume(this.getVolume() + 112);
         }else {
             System.out.println("Impossivel aumentar volume");
         }
