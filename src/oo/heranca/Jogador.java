@@ -2,16 +2,16 @@ package oo.heranca;
 
 public class Jogador {
     int life = 100;
-    int x;
-    int y;
+    int posicaoX;
+    int posicaoY;
 
-    Jogador(int x, int y){
-        this.x = x;
-        this.y = y;
+    Jogador(int posicaoX, int posicaoY){
+        this.posicaoX = posicaoX;
+        this.posicaoY = posicaoY;
     }
     boolean atacar(Jogador oponente){
-        int deltaX = Math.abs(x - oponente.x);
-        int deltaY = Math.abs(y - oponente.y);
+        int deltaX = Math.abs(posicaoX - oponente.posicaoX);
+        int deltaY = Math.abs(posicaoY - oponente.posicaoY);
 
         if (deltaX == 0 && deltaY == 1) {
             oponente.life -= 10;
@@ -28,16 +28,16 @@ public class Jogador {
     boolean andar (Direcao direcao){
         switch (direcao){
             case NORTE:
-                y--;
+                posicaoY--;
                 break;
             case LESTE:
-                x++;
+                posicaoX++;
                 break;
             case SUL:
-                y++;
+                posicaoY++;
                 break;
             case OESTE:
-                x--;
+                posicaoX--;
                 break;
 
         }

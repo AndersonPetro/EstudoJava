@@ -3,12 +3,12 @@ package oo.heranca;
 public class Jogo {
     public static void main(String[] args) {
         Mostro monstro = new Mostro();
-        monstro.x = 10;
-        monstro.y = 10;
+        monstro.posicaoX = 10;
+        monstro.posicaoY = 10;
 
         Heroi heroi = new Heroi(10 , 11);
-        heroi.x = 10;
-        heroi.y = 11;
+        heroi.posicaoX = 10;
+        heroi.posicaoY = 11;
 
         System.out.println(monstro.life);
         System.out.println(heroi.life);
