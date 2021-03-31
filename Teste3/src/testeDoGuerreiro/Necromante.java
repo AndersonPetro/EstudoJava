@@ -2,19 +2,21 @@ package testeDoGuerreiro;
 
 public class Necromante extends Personagem{
 
+    private final int inteligencia;
 
 
 
+    public Necromante(int inteligencia){
 
-    public Necromante(){
-
+        this.inteligencia = inteligencia;
     }
     public Necromante(String nome, int level, float dinheiro, int atack, int defesa) {
         super("andy", 23, 5000, 35,80);
+        this.inteligencia = 60;
     }
     @Override
     public int atacar() {
-     return 0;  
+     return 35;
                //System.out.println("atack 30 pontos"+ this.getAtack());
     }
 
@@ -26,7 +28,8 @@ public class Necromante extends Personagem{
         return 0;
     }
 
-    public void atackEspecial(){
+    public int atackEspecial(){
+        return this.inteligencia;
 
     }
 }

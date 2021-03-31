@@ -1,6 +1,6 @@
 package Teste3;
 
-public class ControleRemoto implements Controlador {
+public class  ControleRemoto implements Controlador {
 
         //Atributos
     private int  volume;

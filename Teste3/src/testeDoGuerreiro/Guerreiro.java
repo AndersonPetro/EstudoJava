@@ -9,13 +9,15 @@ public class Guerreiro extends Personagem {
     private int ataqueEspecial;
     private final List<String> inventario ;
 
-    public Guerreiro(String nome, int level, float dinheiro, int atack, int defesa,int ataqueEspecial) {
+    public Guerreiro() {
         super("Noa", 30, 1000, 80, 30);
        this.inventario= new ArrayList<>();
        this.ataqueEspecial = 160;
 
 
     }
+
+
 
     public int getAtaqueEspecial(int ataqueEspecial){
         return this.ataqueEspecial = atacar() + atacar() + ataqueEspecial;

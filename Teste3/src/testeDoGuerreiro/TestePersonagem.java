@@ -18,7 +18,7 @@ public class TestePersonagem {
        int defesa = 23;
 
       Guerreiro guerreiro = CriarPersonagem.criarGuerreiro(nome, level, dinheiro, attack);
-      var escudo = "Escudo";
+       var escudo = "Escudo";
        var espada = "Espada";
 
        guerreiro.addInventario(espada);
